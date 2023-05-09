@@ -1,0 +1,45 @@
+// colors
+$blue:#2BBCFA;
+$green:#B2D802;
+$black:#14172B;
+$white:#FFFFFF;
+$grey:#767DAF;
+
+// functions
+@function calc-em($target-px, $context) {
+  @return ($target-px / $context) * 1em;
+}
+
+// fonts
+@font-face {
+  font-family: "poppinsbold";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "poppinsregular";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "poppinsmedium";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+// animations
+
+@keyframes navigationLinks {
+    0%   {
+        transform: translateY(0px);
+    }
+    25%  {
+        transform: translateY(-5px);
+    }
+    50%  {
+        transform: translateY(0px)
+    }
+    75%  {
+        transform: translateY(-3px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,266 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "poppinsbold";
+  src: url(/fonts/Poppins-Bold.ttf?404e299be26d78e6679447ea7cb2d41f);
+}
+
+@font-face {
+  font-family: "poppinsregular";
+  src: url(/fonts/Poppins-Regular.ttf?8081832fc5cfbf634aa664a9eff0350e);
+}
+
+@font-face {
+  font-family: "poppinsmedium";
+  src: url(/fonts/Poppins-Medium.ttf?9e1bb626874ed49aa343d66b8d66ceaf);
+}
+
+@keyframes navigationLinks {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.1875em 0;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 3.75em;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation li a {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+
+.navigation li a:hover {
+  color: #2BBCFA;
+  animation: forwards navigationLinks 0.5s;
+}
+
+.navigation li a:hover:before {
+  transition: 300ms;
+  height: 1px;
+  width: 100%;
+  bottom: -3px;
+  content: "";
+  position: absolute;
+  background-color: #2BBCFA;
+  opacity: 1;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #031D44;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+  opacity: 0;
+}
+
+.nav-link-fade-up::before {
+  width: 100%;
+  bottom: 5px;
+  opacity: 0;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7.5em 0 12.5em;
+}
+
+.cta__left .cta__name {
+  color: #2BBCFA;
+  font-size: 2.5em;
+  font-family: poppinsbold, sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.cta__left .cta__fonction {
+  font-size: 1.375em;
+  font-family: poppinsmedium, sans-serif;
+  margin-bottom: 0.22727273em;
+}
+
+.cta__left .cta__description {
+  color: #767DAF;
+  font-family: poppinsmedium,sans-serif;
+  width: 80%;
+}
+
+.cta__right {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: row;
+  grid-gap: 3.125em;
+  align-items: center;
+  justify-items: center;
+}
+
+.separator {
+  display: inline-block;
+}
+
+.about {
+  margin-bottom: 9.375em;
+}
+
+.about__title {
+  margin-bottom: 1.38888889em;
+}
+
+.about__flex {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 3.125em;
+  align-items: center;
+}
+
+.about__right {
+  line-height: 1.7;
+}
+
+.about__right p {
+  font-size: 1.125em;
+  margin-bottom: 0.55555556em;
+}
+
+.about__right p strong, .about__right p a {
+  color: #2BBCFA;
+}
+
+.about__right p a {
+  text-decoration: underline;
+}
+
+.about__right span {
+  margin-right: 0.625em;
+}
+
+.about__right > a {
+  color: #B2D802;
+  fill: #B2D802;
+}
+
+.about__img {
+  width: 100%;
+}
+
+html {
+  background-color: #14172B;
+}
+
+body {
+  color: #FFFFFF;
+  margin: 0 auto;
+  font-family: poppinsregular, sans-serif;
+  max-width: 1800px;
+  line-height: 1.3;
+}
+
+body {
+  padding: 0 9.375em 0 9.375em;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a :hover {
+  color: #2BBCFA;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-family: poppinsbold, sans-serif;
+}
+
