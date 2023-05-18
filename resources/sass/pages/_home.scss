@@ -104,7 +104,7 @@
 }
 .projects__project-title{
     font-family: 'poppinsbold', sans-serif;
-    font-size: calc-em(18,16);
+    font-size: calc-em(20,16);
     margin-bottom: calc-em(20,18);
 }
 .projects__project-description{
@@ -124,7 +124,12 @@
 .projects__button>a{
     padding: calc-em(10,16) calc-em(40,16);
     background-color: $blue;
+    color: $black;
     border-radius: 0.5em;
     text-decoration: none;
-    color: $black;
 }
+.projects__button>a:hover{
+    color: $black;
+    animation: linear 0.5s buttonAnimation;
+}
+

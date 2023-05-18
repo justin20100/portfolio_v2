@@ -98,33 +98,18 @@
 <section class="projects">
     <h2 class="projects__title">Some projects</h2>
     <div class="projects__container">
+
+        {{ collection:projects limit="3" }}
         <div class="projects__project">
             <div class="projects__project-text">
-                <h3 class="projects__project-title">Metropad</h3>
-                <p class="projects__project-description">La description du projet</p>
+                <h3 class="projects__project-title">{{title}}</h3>
+                <p class="projects__project-description">{{project_small_content}}</p>
             </div>
             <div class="projects__project-img">
-                <img class="projects__project-img" src="/assets/projects/testprojet.jpg" alt="L'illustration du projet">
+                <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}">
             </div>
         </div>
-        <div class="projects__project">
-            <div class="projects__project-text">
-                <h3 class="projects__project-title">Metropad</h3>
-                <p class="projects__project-description">The portfolio is a project that was done during my school years. Its role is to gather all my projects and be able to share and show them easily.</p>
-            </div>
-            <div class="projects__project-img">
-                <img class="projects__project-img" src="/assets/projects/testprojet.jpg" alt="L'illustration du projet">
-            </div>
-        </div>
-        <div class="projects__project">
-            <div class="projects__project-text">
-                <h3 class="projects__project-title">Metropad</h3>
-                <p class="projects__project-description">La description du projet</p>
-            </div>
-            <div class="projects__project-img">
-                <img class="projects__project-img" src="/assets/projects/testprojet.jpg" alt="L'illustration du projet">
-            </div>
-        </div>
+        {{ /collection:projects }}
     </div>
     <div class="projects__button">
         <a href="/projects"><p>See all</p></a>

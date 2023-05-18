@@ -55,11 +55,8 @@ body{
     color: $white;
     margin: 0 auto;
     font-family: poppinsregular, sans-serif;
-    max-width: 1800px;
+    max-width: 1400px;
     line-height: 1.3;
-
-}
-body{
     padding: 0 calc-em(150,16) 0 calc-em(150,16);
 }
 ul, li{
@@ -78,5 +75,14 @@ h2{
     font-family: poppinsbold, sans-serif;
 }
 
-
+// Animation
+@keyframes buttonAnimation {
+    0%{transform: scaleX(1);}
+    10%{transform: scaleX(1.4)}
+    30%{transform: scaleX(1.2)}
+    70%{transform: scaleX(1.3)}
+    80%{transform: scaleX(1.5)}
+    90%{transform: scaleX(1.2)}
+    100%{transform: scaleX(1)}
+}
 
