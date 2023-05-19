@@ -265,7 +265,7 @@ table {
 
 .projects__project-title {
   font-family: 'poppinsbold', sans-serif;
-  font-size: 1.125em;
+  font-size: 1.25em;
   margin-bottom: 1.11111111em;
 }
 
@@ -286,14 +286,6 @@ table {
   margin-top: 4.375em;
 }
 
-.projects__button > a {
-  padding: 0.625em 2.5em;
-  background-color: #2BBCFA;
-  border-radius: 0.5em;
-  text-decoration: none;
-  color: #14172B;
-}
-
 html {
   background-color: #14172B;
 }
@@ -302,7 +294,7 @@ body {
   color: #FFFFFF;
   margin: 0 auto;
   font-family: poppinsregular, sans-serif;
-  max-width: 1200px;
+  max-width: 1400px;
   line-height: 1.3;
   padding: 0 9.375em 0 9.375em;
 }
@@ -324,5 +316,42 @@ a :hover {
 h2 {
   font-size: 2.25em;
   font-family: poppinsbold, sans-serif;
+}
+
+.button {
+  padding: 0.625em 2.5em;
+  background-color: #2BBCFA;
+  color: #14172B;
+  border-radius: 0.5em;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #14172B;
+  animation: linear 0.5s buttonAnimation;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scaleX(1);
+  }
+  10% {
+    transform: scaleX(1.4);
+  }
+  30% {
+    transform: scaleX(1.2);
+  }
+  70% {
+    transform: scaleX(1.3);
+  }
+  80% {
+    transform: scaleX(1.5);
+  }
+  90% {
+    transform: scaleX(1.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 

@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc-em(100,16);
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    gap: calc-em(20,16);
+}
+.footer__logo{
+    align-self: center;
+}
+.footer__title{
+    font-family: poppinsbold,sans-serif;
+    font-size: calc-em(20,16);
+}
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    gap: calc-em(15,16);
+}
+.footer__link{
+    color: $grey;
+}
+.footer__link:hover{
+    color: $blue;
+}
+
