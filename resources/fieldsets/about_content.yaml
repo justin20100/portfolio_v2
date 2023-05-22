@@ -1,0 +1,24 @@
+title: 'about content'
+fields:
+  -
+    handle: presentation
+    field:
+      input_type: text
+      antlers: false
+      display: presentation
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: playlists
+    field:
+      input_type: text
+      antlers: false
+      display: playlists
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible

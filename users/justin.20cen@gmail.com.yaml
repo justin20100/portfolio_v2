@@ -1,5 +1,6 @@
 name: justin
 super: true
+avatar: pp.png
 id: 212f0a27-b3a8-4c64-b19b-6a3a65323a01
 password_hash: $2y$10$9COgau2XHIF26yn0Vuhv4emwQfPWROCApKTQJLbqc35LftZqdgzI2
 preferences:

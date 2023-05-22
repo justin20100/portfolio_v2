@@ -9,8 +9,6 @@ updated_at: 1684749110
 project_small_content: 'small Sloth is my final project at school. It is a flutter app.'
 template: project
 project_image_1: projects/metropad/metropad1.jpg
-project_image_2: projects/testprojet.jpg
-project_image_3: projects/testprojet.jpg
 project_image_4: projects/metropad/metropad1.jpg
 tags:
   - flutter
