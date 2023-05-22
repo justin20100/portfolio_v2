@@ -14,8 +14,8 @@ tags:
   - php
   - javascript
 template: project
-project_image_1: projects/portfolio_v1/logoplan-de-travail-1-copie@2x-100.jpg
-project_image_2: projects/portfolio_v1/logoplan-de-travail-1-copie-2@2x-100.jpg
-project_image_3: projects/portfolio_v1/logoplan-de-travail-1-copie-4@2x-100.jpg
-project_image_4: projects/portfolio_v1/logoplan-de-travail-1-copie-3@2x-100.jpg
+project_image_1: projects/portfolio_v1/portfoliov11.jpg
+project_image_2: projects/portfolio_v1/portfoliov12.jpg
+project_image_3: projects/portfolio_v1/portfoliov13.jpg
+project_image_4: projects/portfolio_v1/portfoliov14.jpg
 ---
