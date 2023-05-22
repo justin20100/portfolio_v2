@@ -1,0 +1,21 @@
+{{ partial:partials/navigation }}
+<section class="projects">
+    <h2 class="projects__title">All projects</h2>
+    <div class="projects__container">
+        {{ collection:projects }}
+        <div class="projects__project">
+            <div class="projects__project-text">
+                <h3 class="projects__project-title">{{title}}</h3>
+                <p class="projects__project-description">{{project_small_content}}</p>
+                <div class="projects__project-button button__wrapper">
+                    <a href="/project/{{slug}}" class="projects__project-link button">See more of this</a>
+                </div>
+            </div>
+            <div class="projects__project-img">
+                <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}">
+            </div>
+        </div>
+        {{ /collection:projects }}
+    </div>
+</section>
+{{ partial:partials/footer }}

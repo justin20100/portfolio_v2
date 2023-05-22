@@ -37,7 +37,7 @@
 
 // About
 .about{
-  margin-bottom: calc-em(150,16);
+    margin: 0 calc-em(50,16) calc-em(150,16);
 }
 .about__title{
   margin-bottom: calc-em(50,36);
@@ -74,7 +74,7 @@
 
 // Projects
 .projects{
-    margin-bottom: calc-em(150,16);
+    margin: 0 calc-em(50,16) calc-em(150,16);
 }
 .projects__title{
     margin-bottom: calc-em(50,36);
@@ -111,6 +111,15 @@
     font-family: 'poppinsregular',sans-serif;
     color: $grey;
     line-height: 1.4;
+    margin-bottom: calc-em(40,16);
+}
+.projects__project-button{
+    display: flex;
+    font-size: calc-em(14,16);
+}
+.projects__project-link{
+    color: $blue;
+
 }
 .projects__project-img{
     width: 100%;
@@ -121,3 +130,4 @@
     justify-content: center;
     margin-top: calc-em(70,16);
 }
+

@@ -1,17 +1,56 @@
 {{ partial:partials/navigation }}
-<section class="about">
-    <h2 class="about__title">About</h2>
-    <div class="about__flex">
-        <div class="about__left">
-            <img class="about__img" src="/assets/pp.png" alt="picture of Justin"/>
+<section class="project">
+    <h2 class="project__title">{{title}}</h2>
+    <ul class="project__tags">
+        {{ tags}}
+        <li class="project__tag">{{ title }}</li>
+        {{ /tags }}
+    </ul>
+    <p class="project__text">{{project_content}}</p>
+    <a class="project__link" href="{{project_link}}">Visiter {{title}}</a>
+    <div class="project__gallery">
+        <div class="project__gallery-item">
+            <img src="{{project_image_1:url}}" alt="{{ project_image_1:alt }}" class="project__img">
         </div>
-        <div class="about__right">
-            <p>Hello i'm <strong>Justin Vincent</strong>, i’m <strong>22</strong> and i learn <strong>web
-                development</strong> at the Higher Educational Institution of Liege's province in <strong>Belgium</strong>. You can find my CV to download just below. If you have some questions you can email me at <a href="mailto:justin.20cenagmail.com">justin.20cen@gmail.com</a> .</p>
-            <a href="./"><span><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.5 12C1.0875 12 0.7345 11.8533 0.441 11.5597C0.147 11.2657 0 10.9125 0 10.5V8.25H1.5V10.5H10.5V8.25H12V10.5C12 10.9125 11.8533 11.2657 11.5597 11.5597C11.2657 11.8533 10.9125 12 10.5 12H1.5ZM6 9L2.25 5.25L3.3 4.1625L5.25 6.1125V0H6.75V6.1125L8.7 4.1625L9.75 5.25L6 9Z"/>
-            </svg></span>Download my CV</a>
+        <div class="project__gallery-item">
+            <img src="{{project_image_2:url}}" alt="{{ project_image_2:alt }}" class="project__img">
+        </div>
+        <div class="project__gallery-item">
+            <img src="{{project_image_3:url}}" alt="{{ project_image_3:alt }}" class="project__img">
+        </div>
+        <div class="project__gallery-item">
+            <img src="{{project_image_4:url}}" alt="{{ project_image_4:alt }}" class="project__img">
         </div>
     </div>
+</section>
+<section class="projects">
+    <h2 class="projects__title">Other projects</h2>
+    <div class="projects__container">
+        {{ collection:projects :slug:isnt=slug limit="3" }}
+        <div class="projects__project">
+            <div class="projects__project-text">
+                <h3 class="projects__project-title">{{title}}</h3>
+                <p class="projects__project-description">{{project_small_content}}</p>
+                <div class="projects__project-button button__wrapper">
+                    <a href="/project/{{slug}}" class="projects__project-link button">See more of this</a>
+                </div>
+            </div>
+            <div class="projects__project-img">
+                <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}">
+            </div>
+        </div>
+        {{ /collection:projects }}
+    </div>
+    <div class="projects__button button__wrapper">
+        <a href="/projects" class="button">See all</a>
+    </div>
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" version="1.1">
+        <defs>
+            <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="regular"/>
+            </filter>
+        </defs>
+    </svg>
 </section>
 {{ partial:partials/footer }}
