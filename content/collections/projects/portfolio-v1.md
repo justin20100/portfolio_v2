@@ -5,12 +5,8 @@ title: 'Portfolio v1'
 author: 212f0a27-b3a8-4c64-b19b-6a3a65323a01
 project_content: 'The portfolio is a project that was done during my school years. Its role is to gather all my projects and be able to share and show them easily. The portfolio is a project that was done during my school years. Its role is to gather all my projects and be able to share and show them easily.'
 updated_by: 212f0a27-b3a8-4c64-b19b-6a3a65323a01
-updated_at: 1684747738
-project_small_content: 'Small This is the first portfolio i made before this one. I create it using wordpress.'
-project_image_1: projects/metropad1.jpg
-project_image_2: projects/testprojet.jpg
-project_image_3: projects/testprojet.jpg
-project_image_4: projects/testprojet.jpg
+updated_at: 1684762264
+project_small_content: 'The first portfolio design i made before this one. It was a custom wordpress project theme.'
 tags:
   - html
   - css
@@ -18,4 +14,8 @@ tags:
   - php
   - javascript
 template: project
+project_image_1: projects/portfolio_v1/logoplan-de-travail-1-copie@2x-100.jpg
+project_image_2: projects/portfolio_v1/logoplan-de-travail-1-copie-2@2x-100.jpg
+project_image_3: projects/portfolio_v1/logoplan-de-travail-1-copie-4@2x-100.jpg
+project_image_4: projects/portfolio_v1/logoplan-de-travail-1-copie-3@2x-100.jpg
 ---

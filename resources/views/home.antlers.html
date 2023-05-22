@@ -1,9 +1,9 @@
 {{ partial:partials/navigation }}
 <div class="cta">
     <div class="cta__left">
-        <p class="cta__name">Justin Vincent</p>
-        <p class="cta__fonction">Web developer</p>
-        <p class="cta__description">I develop beautiful, high quality mobile app and websites</p>
+        <p class="cta__name">{{name}}</p>
+        <p class="cta__fonction">{{work}}</p>
+        <p class="cta__description">{{introduction}}</p>
     </div>
     <div class="cta__right">
         <div>
@@ -87,9 +87,8 @@
             <img class="about__img" src="/assets/pp.png" alt="picture of Justin"/>
         </div>
         <div class="about__right">
-            <p>Hello i'm <strong>Justin Vincent</strong>, i’m <strong>22</strong> and i learn <strong>web
-                development</strong> at the Higher Educational Institution of Liege's province in <strong>Belgium</strong>. You can find my CV to download just below. If you have some questions you can email me at <a href="mailto:justin.20cenagmail.com">justin.20cen@gmail.com</a> .</p>
-            <a href="./"><span><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+            <p>{{about_text}}</p>
+            <a href="{{cv_file:url}}" download="cv_vincent_justin" ><span><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.5 12C1.0875 12 0.7345 11.8533 0.441 11.5597C0.147 11.2657 0 10.9125 0 10.5V8.25H1.5V10.5H10.5V8.25H12V10.5C12 10.9125 11.8533 11.2657 11.5597 11.5597C11.2657 11.8533 10.9125 12 10.5 12H1.5ZM6 9L2.25 5.25L3.3 4.1625L5.25 6.1125V0H6.75V6.1125L8.7 4.1625L9.75 5.25L6 9Z"/>
             </svg></span>Download my CV</a>
         </div>
