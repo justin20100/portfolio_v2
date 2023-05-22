@@ -1,1 +1,8 @@
-<p>404 Page not found.</p>
+{{ partial:partials/navigation }}
+<div class="error">
+    <p class="error__text">404 Page not found !</p>
+    <div class="projects__project-button button__wrapper">
+        <a href="{{ link to=" " absolute="true" }}" class="projects__project-link button">Go to home page</a>
+    </div>
+</div>
+{{ partial:partials/footer}}

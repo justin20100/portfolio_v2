@@ -10,7 +10,7 @@ tags:
   - css
   - javascript
 updated_by: 212f0a27-b3a8-4c64-b19b-6a3a65323a01
-updated_at: 1684760665
+updated_at: 1684777454
 project_small_content: 'The curriculum vitae is the first one page website i did. It was the first personal project we had to do for school. The idea was to use an existing web design (from buff site for me) and use it to make a little présentation page.'
 project_image_1: projects/cv/cv1.jpg
 project_image_2: projects/metropad/metropad1.jpg

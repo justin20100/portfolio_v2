@@ -1,0 +1,12 @@
+.error{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-gap: calc-em(20,16);
+}
+.error__text{
+    font-family: poppinsregular, sans-serif;
+    font-size: calc-em(30,16);
+}

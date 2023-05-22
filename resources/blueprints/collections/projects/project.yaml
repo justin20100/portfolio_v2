@@ -111,13 +111,29 @@ sections:
       -
         handle: tags
         field:
-          mode: default
-          create: true
+          type: terms
           taxonomies:
             - tags
           display: tags
-          type: terms
+          mode: default
+          create: true
           icon: taxonomy
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: date
+        field:
+          mode: single
+          time_enabled: false
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: date
+          type: date
+          icon: date
           listable: hidden
           instructions_position: above
           visibility: visible
