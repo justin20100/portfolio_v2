@@ -137,6 +137,33 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+      -
+        handle: app_link
+        field:
+          display: 'app link'
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: git_link
+        field:
+          display: 'git link'
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: design_link
+        field:
+          display: 'Design link'
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
   sidebar:
     display: Sidebar
     fields:

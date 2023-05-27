@@ -240,7 +240,7 @@ table {
 
 .about__right p {
   font-size: 1.125em;
-  margin-bottom: 0.55555556em;
+  margin-bottom: 0.27777778em;
 }
 
 .about__right p strong, .about__right p a {
@@ -262,6 +262,12 @@ table {
 
 .about__img {
   width: 100%;
+}
+
+.about__button {
+  margin-top: 1.42857143em;
+  display: flex;
+  font-size: 0.875em;
 }
 
 .projects {

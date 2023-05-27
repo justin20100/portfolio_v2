@@ -2,7 +2,7 @@
     margin: calc-em(100,16) calc-em(50,16) calc-em(150,16);
 }
 .project__title{
-    margin-bottom: calc-em(50,36);
+    margin-bottom: calc-em(30,36);
 }
 .project__tags{
     display: flex;
@@ -19,10 +19,6 @@
 .project__text{
     color: $grey;
     line-height: 1.4;
-    margin-bottom: calc-em(20,16);
-}
-.project__link{
-    display: inline-block;
     margin-bottom: calc-em(50,16);
 }
 .project__gallery{
@@ -30,13 +26,19 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: calc-em(45,16);
-}
-.project__gallery-item{
-
+    margin-bottom: calc-em(50,16);
 }
 .project__img{
     width: 100%;
     border-radius: calc-em(10,16);
+}
+.project__links{
+    display: flex;
+    justify-content: center;
+    gap: calc-em(10,16);
+}
+.project__link{
+    font-size: calc-em(14,16);
 }
 
 

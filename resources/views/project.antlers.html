@@ -7,7 +7,6 @@
         {{ /tags }}
     </ul>
     <p class="project__text">{{project_content}}</p>
-    <a class="project__link" href="{{project_link}}">Visiter {{title}}</a>
     <div class="project__gallery">
         <div class="project__gallery-item">
             <img src="{{project_image_1:url}}" alt="{{ project_image_1:alt }}" class="project__img">
@@ -21,6 +20,17 @@
         <div class="project__gallery-item">
             <img src="{{project_image_4:url}}" alt="{{ project_image_4:alt }}" class="project__img">
         </div>
+    </div>
+    <div class="project__links button__wrapper">
+        {{if app_link}}
+        <a href="{{app_link}}" class="button project__link" target="_blank">Visit {{title}}</a>
+        {{/if}}
+        {{if git_link}}
+        <a href="{{git_link}}" class="button project__link" target="_blank">Git repository</a>
+        {{/if}}
+        {{if design_link}}
+        <a href="{{design_link}}" class="button project__link" target="_blank">Design file</a>
+        {{/if}}
     </div>
 </section>
 <section class="projects">
