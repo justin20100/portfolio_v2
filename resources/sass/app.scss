@@ -48,9 +48,16 @@ table {
 @import "components/_footer";
 @import "pages/_home";
 @import "pages/_project";
+@import "pages/_projects";
 @import "pages/_404";
 
 // Global scss
+.hidden{
+    position: absolute;
+    left: 0;
+    top: -10000px;
+    overflow: hidden;
+}
 html{
     background-color: $black;
 }
@@ -73,10 +80,14 @@ a{
         color:$blue;
     }
 }
+h1{
+    color: $white;
+    font-size: 2.5em;
+    font-family: poppinsbold, sans-serif;
+}
 h2{
     font-size: calc-em(36,16);
     font-family: poppinsbold, sans-serif;
-    color: $blue;
 }
 
 // Button

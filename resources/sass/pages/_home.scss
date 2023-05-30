@@ -60,13 +60,6 @@
       text-decoration: underline;
     }
   }
-  span{
-    margin-right: calc-em(10,16);
-  }
-  >a{
-    color: $green;
-    fill: $green;
-  }
 }
 .about__img{
   width: 100%;
@@ -92,7 +85,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3em;
+    gap: 4em;
 }
 .projects__project{
     width: 100%;

@@ -346,7 +346,7 @@ table {
 }
 
 .project__title {
-  margin-bottom: 1.38888889em;
+  margin-bottom: 0.83333333em;
 }
 
 .project__tags {
@@ -366,11 +366,6 @@ table {
 .project__text {
   color: #767DAF;
   line-height: 1.4;
-  margin-bottom: 1.25em;
-}
-
-.project__link {
-  display: inline-block;
   margin-bottom: 3.125em;
 }
 
@@ -379,11 +374,22 @@ table {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2.8125em;
+  margin-bottom: 3.125em;
 }
 
 .project__img {
   width: 100%;
   border-radius: 0.625em;
+}
+
+.project__links {
+  display: flex;
+  justify-content: center;
+  gap: 0.625em;
+}
+
+.project__link {
+  font-size: 0.875em;
 }
 
 .error {

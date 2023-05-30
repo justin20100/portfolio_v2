@@ -42,7 +42,7 @@ fields:
       allow_uploads: true
       show_filename: true
       max_files: 1
-      display: 'about img'
+      display: 'YourAddon img'
       type: assets
       icon: assets
       listable: hidden
@@ -53,7 +53,7 @@ fields:
     field:
       input_type: text
       antlers: false
-      display: 'about text'
+      display: 'YourAddon text'
       type: text
       icon: text
       listable: hidden
