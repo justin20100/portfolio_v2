@@ -4,7 +4,7 @@ blueprint: project
 title: Metropad
 author: 212f0a27-b3a8-4c64-b19b-6a3a65323a01
 updated_by: 212f0a27-b3a8-4c64-b19b-6a3a65323a01
-updated_at: 1685183166
+updated_at: 1685469893
 project_content: 'Metropad is a metronome for drommer dev in flutter'
 tags:
   - flutter
@@ -17,4 +17,5 @@ project_image_3: projects/metropad/metropad3.jpg
 project_image_4: projects/metropad/metropad4.jpg
 git_link: 'https://github.com/tecg-dam-2022-2023/examen_dam-justin20100'
 design_link: 'https://www.figma.com/file/5a1vXAAxhfnHnoKu5tnyVe/Metropad?type=design&node-id=0%3A1&t=EcFdh8lZaBf5O5Hs-1'
+project_date: '2023-05-12'
 ---

@@ -122,7 +122,7 @@ sections:
           instructions_position: above
           visibility: visible
       -
-        handle: date
+        handle: project_date
         field:
           mode: single
           time_enabled: false

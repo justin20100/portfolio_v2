@@ -4,7 +4,7 @@
 <section class="projects projects-all">
     <h2 class="hidden">Projects</h2>
     <div class="projects__container">
-        {{ collection:projects }}
+        {{collection:projects sort="project_date:desc"}}
         <div class="projects__project">
             <div class="projects__project-text">
                 <h3 class="projects__project-title">{{title}}</h3>
