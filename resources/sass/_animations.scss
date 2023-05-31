@@ -6,6 +6,8 @@
     height: 100%;
     display: flex;
 }
+
+// slide up
 .slide-effect .slideUp{
     position: relative;
     opacity:1;
@@ -20,4 +22,38 @@
 @keyframes slideUp {
     0% {transform: translateY(0);}
     100% {transform: translateY(-80px);}
+}
+
+// slide left
+.slide-effect .slideLeft{
+    position: relative;
+    opacity:1;
+    left: 800px;
+}
+.slide-effect-on .slideLeft {
+    position: relative;
+    opacity:1;
+    left: 800px;
+    animation: slideLeft ease 1s forwards;
+}
+@keyframes slideLeft {
+    0% {transform: translatex(0);}
+    100% {transform: translatex(-800px);}
+}
+
+// slide right
+.slide-effect .slideRight{
+    position: relative;
+    opacity:1;
+    right: 800px;
+}
+.slide-effect-on .slideRight {
+    position: relative;
+    opacity:1;
+    right: 800px;
+    animation: slideRight ease 1s forwards;
+}
+@keyframes slideRight {
+    0% {transform: translatex(0);}
+    100% {transform: translatex(800px);}
 }
