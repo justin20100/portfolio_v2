@@ -1,0 +1,105 @@
+.about__title{
+    color: $blue;
+    margin: calc-em(100,40) 0 calc-em(50,40);
+}
+.about__introduction{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: calc-em(100,16);
+    margin-bottom: calc-em(150,16);
+    img{
+        width: 100%;
+        border-radius: calc-em(20,16);
+    }
+    p{
+        font-size: calc-em(20,16);
+        line-height: 2;
+        strong{
+            color: $blue;
+        }
+    }
+}
+
+.studies{
+    margin: 0 calc-em(50,16) calc-em(150,16) calc-em(50,16);
+}
+.studies__title{
+    margin-bottom: calc-em(50,32);
+}
+.studies__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: calc-em(100,16);
+    img{
+        width: 100%;
+        border-radius: calc-em(20,16);
+    }
+    p{
+        line-height: 1.8;
+        strong{
+            color: $blue;
+        }
+    }
+}
+
+.hobbies{
+    margin: 0 calc-em(50,16) calc-em(150,16) calc-em(50,16);
+}
+.hobbies__title{
+    margin-bottom: calc-em(50,32);
+}
+.hobbies__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: calc-em(100,16);
+    p{
+        line-height: 1.8;
+        strong{
+            color: $blue;
+        }
+    }
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: calc-em(15,16);
+        img{
+            width: 100%;
+            border-radius: calc-em(20,16);
+        }
+    }
+}
+.playlists{
+    margin: 0 calc-em(50,16) calc-em(200,16) calc-em(50,16);
+}
+.playlists__title{
+    margin-bottom: calc-em(50,32);
+}
+.playlists__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: calc-em(100,16);
+}
+.playlists__card{
+    img{
+        width: 100%;
+        border-radius: calc-em(20,16);
+        margin-bottom: calc-em(20,16);
+    }
+    p.playlists__card-title{
+        font-size: calc-em(20,16);
+        font-family: poppinsbold,sans-serif;
+        margin-bottom: calc-em(5,20);
+    }
+    p.playlists__card-description{
+        color: $grey;
+        margin-bottom: calc-em(20,20);
+    }
+}
+.playlists__card-button{
+    display: flex;
+    align-self: center;
+    font-size: calc-em(14,16);
+}

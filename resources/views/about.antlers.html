@@ -1,12 +1,41 @@
-{{ strava:index }}
-{{ activities }}
-<!-- Afficher les données de l'activité ici -->
-<h2>{{ name }}</h2>
-<p>{{ distance }}</p>
-<!-- ... -->
-{{ /activities }}
-{{ /strava:index }}
-<div>
-    <img src="https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n/images" alt="">
-    <a href="https://open.spotify.com/playlist/5XC25FTCQg4tHqa0spKttj?si=7b4a96717c6a40ab">playlist</a>
+{{ partial:partials/navigation }}
+<h1 class="about__title">{{title}}</h1>
+<div class="about__introduction">
+    {{presentation_text}}
+    <img src="{{presentation_image:url}}" alt="">
 </div>
+<section class="studies">
+    <h2 class="studies__title">{{studies_title}}</h2>
+    <div class="studies__container">
+        {{studies_text}}
+        <img src="{{studies_image:url}}" alt="">
+    </div>
+</section>
+<section class="hobbies">
+    <h2 class="hobbies__title">{{hobbies_title}}</h2>
+    <div class="hobbies__container">
+        {{hobbies_text}}
+        <div class="hobbies__images">
+            <img src="{{hobbies_image1:url}}" alt="">
+            <img src="{{hobbies_image2:url}}" alt="">
+            <img src="{{hobbies_image3:url}}" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="playlists">
+    <h2 class="playlists__title">{{playlists_title}}</h2>
+    <div class="playlists__container">
+        {{ collection:playlists }}
+        <div class="playlists__card">
+            <img src="{{image:url}}" alt="">
+            <p class="playlists__card-title">{{title}}</p>
+            <p class="playlists__card-description">{{description}}</p>
+            <div class="playlists__card-button button__wrapper">
+                <a href="{{playlist_link}}" class="button" target="_blank">Listen to this playlist</a>
+            </div>
+        </div>
+        {{ /collection:playlists}}
+    </div>
+</section>
+{{ partial:partials/footer }}

@@ -22,13 +22,17 @@ sections:
           validate:
             - required
       -
-        handle: presentation
+        handle: presentation_text
         field:
-          input_type: text
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
           antlers: false
-          display: presentation
-          type: text
-          icon: text
+          display: 'presentation text'
+          type: markdown
+          icon: markdown
           listable: hidden
           instructions_position: above
           visibility: visible
@@ -61,11 +65,15 @@ sections:
       -
         handle: studies_text
         field:
-          input_type: text
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
           antlers: false
-          display: 'studies text'
-          type: text
-          icon: text
+          display: studies_text
+          type: markdown
+          icon: markdown
           listable: hidden
           instructions_position: above
           visibility: visible
@@ -85,11 +93,11 @@ sections:
           instructions_position: above
           visibility: visible
       -
-        handle: hibbies_title
+        handle: hobbies_title
         field:
           input_type: text
           antlers: false
-          display: 'hibbies title'
+          display: 'hobbies title'
           type: text
           icon: text
           listable: hidden
@@ -98,16 +106,20 @@ sections:
       -
         handle: hobbies_text
         field:
-          input_type: text
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
           antlers: false
           display: 'hobbies text'
-          type: text
-          icon: text
+          type: markdown
+          icon: markdown
           listable: hidden
           instructions_position: above
           visibility: visible
       -
-        handle: hobbies_image
+        handle: hobbies_image1
         field:
           mode: list
           container: assets
@@ -115,9 +127,50 @@ sections:
           allow_uploads: true
           show_filename: true
           max_files: 1
-          display: 'hobbies image'
+          display: 'hobbies image1'
           type: assets
           icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: hobbies_image2
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'hobbies image2'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: hobbies_image3
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'hobbies image3'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: playlists_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'playlists title'
+          type: text
+          icon: text
           listable: hidden
           instructions_position: above
           visibility: visible

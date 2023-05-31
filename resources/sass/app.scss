@@ -49,6 +49,7 @@ table {
 @import "pages/_home";
 @import "pages/_project";
 @import "pages/_projects";
+@import "pages/_about";
 @import "pages/_404";
 
 // Global scss
@@ -82,11 +83,11 @@ a{
 }
 h1{
     color: $white;
-    font-size: 2.5em;
+    font-size: calc-em(40,16);
     font-family: poppinsbold, sans-serif;
 }
 h2{
-    font-size: calc-em(36,16);
+    font-size: calc-em(32,16);
     font-family: poppinsbold, sans-serif;
 }
 
