@@ -1,0 +1,23 @@
+// Text slide up animation
+.slide-effect, .slide-effect-on {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.slide-effect .slideUp{
+    position: relative;
+    opacity:1;
+    top: 80px;
+}
+.slide-effect-on .slideUp {
+    position: relative;
+    opacity:1;
+    top: 80px;
+    animation: slideUp ease 1s forwards;
+}
+@keyframes slideUp {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-80px);}
+}
