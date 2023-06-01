@@ -40,6 +40,7 @@
         border-radius: calc-em(20,16);
     }
     p{
+        font-size: calc-em(18,16);
         line-height: 1.8;
         strong{
             color: $blue;
@@ -60,6 +61,7 @@
     gap: calc-em(100,16);
     p{
         line-height: 1.8;
+        font-size: calc-em(18,16);
         strong{
             color: $blue;
         }

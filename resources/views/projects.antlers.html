@@ -3,25 +3,25 @@
     <h1 class="slideUp">All projects</h1>
 </div>
 <div class="projects__intro slide-effect-off">
-    <p class="slideUp"> This page brings together all my projects and introduces them to you. Have a nice discovery !</p>
+    <p class="slideUp">This page brings together all my projects and introduces them to you. Have a nice discovery!</p>
 </div>
 <section class="projects projects-all">
     <h2 class="hidden">Projects</h2>
     <div class="projects__container">
         {{collection:projects sort="project_date:desc"}}
-        <div class="projects__project slide-effect-off">
+        <div class="projects__project slide-effect-off" itemscope itemtype="http://schema.org/CreativeWork">
             <div class="projects__project-text slideUp">
-                <h3 class="projects__project-title">{{title}}</h3>
-                <p class="projects__project-description">{{project_small_content}}</p>
+                <h3 class="projects__project-title" itemprop="name">{{title}}</h3>
+                <p class="projects__project-description" itemprop="description">{{project_small_content}}</p>
                 <div class="projects__project-button button__wrapper">
                     <a href="/project/{{slug}}" class="projects__project-link button">See more of this</a>
                 </div>
             </div>
             <div class="projects__project-img {{if (count % 2 === 0)}} slideRight {{else}}slideLeft{{/if}}">
-                <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}">
+                <img class="projects__project-img" itemprop="image" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}">
             </div>
         </div>
-        {{ /collection:projects }}
+        {{/collection:projects}}
     </div>
 </section>
 {{ partial:partials/footer }}

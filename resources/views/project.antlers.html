@@ -1,29 +1,29 @@
 {{ partial:partials/navigation }}
-<section class="project">
-    <h1 class="project__title">{{title}}</h1>
+<section class="project" itemscope itemtype="http://schema.org/CreativeWork">
+    <h1 class="project__title" itemprop="name">{{title}}</h1>
     <ul class="project__tags">
         {{ tags}}
-        <li class="project__tag">{{ title }}</li>
+        <li class="project__tag" itemprop="keywords">{{ title }}</li>
         {{ /tags }}
     </ul>
-    <p class="project__text">{{project_content}}</p>
+    <p class="project__text" itemprop="description">{{project_content}}</p>
     <div class="project__gallery">
         <div class="project__gallery-item">
-            <img src="{{project_image_1:url}}" alt="{{ project_image_1:alt }}" class="project__img">
+            <img src="{{project_image_1:url}}" alt="{{ project_image_1:alt }}" class="project__img" itemprop="image">
         </div>
         <div class="project__gallery-item">
-            <img src="{{project_image_2:url}}" alt="{{ project_image_2:alt }}" class="project__img">
+            <img src="{{project_image_2:url}}" alt="{{ project_image_2:alt }}" class="project__img" itemprop="image">
         </div>
         <div class="project__gallery-item">
-            <img src="{{project_image_3:url}}" alt="{{ project_image_3:alt }}" class="project__img">
+            <img src="{{project_image_3:url}}" alt="{{ project_image_3:alt }}" class="project__img" itemprop="image">
         </div>
         <div class="project__gallery-item">
-            <img src="{{project_image_4:url}}" alt="{{ project_image_4:alt }}" class="project__img">
+            <img src="{{project_image_4:url}}" alt="{{ project_image_4:alt }}" class="project__img" itemprop="image">
         </div>
     </div>
     <div class="project__links button__wrapper">
         {{if app_link}}
-        <a href="{{app_link}}" class="button project__link" target="_blank">Visit {{title}}</a>
+        <a href="{{app_link}}" class="button project__link" target="_blank" itemprop="url">Visit {{title}}</a>
         {{/if}}
         {{if git_link}}
         <a href="{{git_link}}" class="button project__link" target="_blank">Git repository</a>
@@ -33,31 +33,35 @@
         {{/if}}
     </div>
 </section>
-<section class="projects">
+<section class="projects" itemscope itemtype="http://schema.org/CollectionPage">
     <h2 class="projects__title">Other projects</h2>
     <div class="projects__container">
         {{ collection:projects :slug:isnt=slug limit="3" }}
-        <div class="projects__project">
+        <div class="projects__project" itemprop="hasPart" itemscope itemtype="http://schema.org/CreativeWork">
             <div class="projects__project-text">
-                <h3 class="projects__project-title">{{title}}</h3>
-                <p class="projects__project-description">{{project_small_content}}</p>
+                <h3 class="projects__project-title" itemprop="name">{{title}}</h3>
+                <p class="projects__project-description" itemprop="description">{{project_small_content}}</p>
                 <div class="projects__project-button button__wrapper">
-                    <a href="/project/{{slug}}" class="projects__project-link button">See more of this</a>
+                    <a href="/project/{{slug}}" class="projects__project-link button" itemprop="url">See more of
+                        this</a>
                 </div>
             </div>
             <div class="projects__project-img">
-                <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}">
+                <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}"
+                     itemprop="image">
             </div>
         </div>
         {{ /collection:projects }}
     </div>
     <div class="projects__button button__wrapper">
-        <a href="/projects" class="button">See all</a>
+        <a href="/projects" class="button" itemprop="url">See all</a>
     </div>
     <svg style="visibility: hidden; position: absolute;" width="0" height="0" version="1.1">
         <defs>
-            <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                               result="goo"/>
                 <feComposite in="SourceGraphic" in2="goo" operator="regular"/>
             </filter>
         </defs>

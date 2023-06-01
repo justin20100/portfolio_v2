@@ -1,14 +1,14 @@
 {{ partial:partials/navigation }}
 <div class="cta slide-effect-off">
-    <div class="cta__left">
+    <div class="cta__left" itemscope itemtype="http://schema.org/Person">
         <div class="cta__name slide-effect-off">
-            <p class="slideUp">{{name}}</p>
+            <p class="slideUp" itemprop="name">{{name}}</p>
         </div>
         <div class="cta__fonction slide-effect-off">
-            <p class="slideUp">{{work}}</p>
+            <p class="slideUp" itemprop="jobTitle">{{work}}</p>
         </div>
         <div class="cta__description slide-effect-off">
-            <p class="slideUp">{{introduction}}</p>
+            <p class="slideUp" itemprop="description">{{introduction}}</p>
         </div>
     </div>
     <div class="cta__right fadeIn">
@@ -86,16 +86,16 @@
         </div>
     </div>
 </div>
-<section class="about ">
+<section class="about " itemscope itemtype="http://schema.org/Person">
     <div class="about__title-home slide-effect-off">
         <h2 class="slideUp">About</h2>
     </div>
     <div class="about__flex slide-effect-off">
         <div class="about__left slideUp">
-            <img class="about__img" src="{{about_img:url}}" alt="picture of Justin"/>
+            <img class="about__img" itemprop="image" src="{{about_img:url}}" alt="Picture of Justin"/>
         </div>
         <div class="about__right slideUp">
-            <p>{{about_text}}</p>
+            <p itemprop="description">{{about_text}}</p>
             <div class="about__button button__wrapper">
                 <a href="{{ link to="about" absolute="true" }}" class="button">Discover me</a>
             </div>
@@ -108,16 +108,16 @@
     </div>
     <div class="projects__container">
         {{ collection:projects limit="3" }}
-        <div class="projects__project slide-effect-off">
+        <div class="projects__project slide-effect-off" itemscope itemtype="http://schema.org/CreativeWork">
             <div class="projects__project-text slideUp">
-                <h3 class="projects__project-title">{{title}}</h3>
-                <p class="projects__project-description">{{project_small_content}}</p>
+                <h3 class="projects__project-title" itemprop="name">{{title}}</h3>
+                <p class="projects__project-description" itemprop="description">{{project_small_content}}</p>
                 <div class="projects__project-button button__wrapper">
                     <a href="/project/{{slug}}" class="projects__project-link button">See more of this</a>
                 </div>
             </div>
             <div class="projects__project-img {{if (count % 2 === 0)}} slideRight {{else}}slideLeft{{/if}}">
-                <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}">
+                <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}" itemprop="image">
             </div>
         </div>
         {{ /collection:projects }}

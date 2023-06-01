@@ -9,11 +9,14 @@
     gap: calc-em(60,16);
     align-items: center;
     justify-content: center;
-  }
+    :active .nav-link{
+        color: $blue;
+    }
     li a {
         display: inline-block;
         text-decoration: none;
         position: relative;
+    }
     }
     li a:hover{
         color: $blue;

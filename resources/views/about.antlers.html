@@ -1,19 +1,19 @@
 {{ partial:partials/navigation }}
 <div class="slide-effect-off about__title">
-    <h1 class="slideUp">{{title}}</h1>
+    <h1 class="slideUp" itemprop="name">{{title}}</h1>
 </div>
 <div class="about__introduction slide-effect-off">
-    <div class="slideUp">
+    <div class="slideUp" itemprop="description">
         {{presentation_text}}
     </div>
     <img class="slideLeft" src="{{presentation_image:url}}" alt="">
 </div>
-<section class="studies">
+<section class="studies" itemscope itemtype="http://schema.org/EducationalOrganization">
     <div class="studies__title slide-effect-off">
         <h2 class="slideUp">{{studies_title}}</h2>
     </div>
     <div class="studies__container slide-effect-off">
-        <div class="slideUp">
+        <div class="slideUp" itemprop="description">
             {{studies_text}}
         </div>
         <img class="slideLeft" src="{{studies_image:url}}" alt="">
@@ -24,7 +24,7 @@
         <h2 class="slideUp">{{hobbies_title}}</h2>
     </div>
     <div class="hobbies__container slide-effect-off">
-        <div class="slideUp">
+        <div class="slideUp" itemprop="description">
             {{hobbies_text}}
         </div>
         <div class="hobbies__images slideLeft">
@@ -42,9 +42,9 @@
     <div class="slide-effect-off">
         <div class="playlists__container slideUp">
             {{ collection:playlists }}
-            <div class="playlists__card">
+            <div class="playlists__card" itemscope itemtype="http://schema.org/MusicPlaylist">
                 <img src="{{image:url}}" alt="">
-                <p class="playlists__card-title">{{title}}</p>
+                <p class="playlists__card-title" itemprop="name">{{title}}</p>
                 <p class="playlists__card-description">{{description}}</p>
                 <div class="playlists__card-button button__wrapper">
                     <a href="{{playlist_link}}" class="button" target="_blank">Listen to this playlist</a>
