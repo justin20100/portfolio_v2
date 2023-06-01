@@ -66,3 +66,19 @@
 .navigation__resume:hover{
     fill: $blue;
 }
+
+@media (max-width: 767px) {
+    .navigation {
+        flex-direction: column;
+        margin: calc-em(20,16);
+        gap: calc-em(20,16);
+        ul{
+            gap: calc-em(20,16);
+        }
+    }
+    .navigation__resume{
+        span{
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,4 +1,6 @@
-.projects__h1{
-    margin: calc-em(100,36) 0 calc-em(20,36);
-    color: $blue;
+.projects__h1 {
+    margin: calc-em(150, 16) 0 calc-em(20, 16);
+    h1 {
+        color: $blue;
+    }
 }

@@ -1,6 +1,7 @@
 // Cta
 .cta {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
     justify-content: space-around;
     align-items: center;
     margin: calc-em(120, 16) 0 calc-em(200, 16);
@@ -30,6 +31,12 @@
     grid-gap: calc-em(40, 16) 0;
     align-items: center;
     justify-items: center;
+    div img{
+        width: 100%;
+    }
+    div svg{
+        width: 100%;
+    }
 }
 .separator {
     display: inline-block;
@@ -128,3 +135,94 @@
     margin-top: calc-em(70, 16);
 }
 
+@media (max-width: 767px) {
+    // cta
+    .cta {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.7fr;
+        margin: 0 0 calc-em(100,16) 0;
+    }
+    .cta__left {
+        margin: 0 calc-em(20,16);
+        .cta__name {
+            font-size: calc-em(30, 16);
+            margin-bottom: calc-em(20, 40);
+        }
+        .cta__fonction {
+            font-size: calc-em(18, 16);
+            margin-bottom: calc-em(5, 22);
+        }
+        .cta__description {
+            font-size: calc-em(14,16);
+        }
+    }
+    .cta__right {
+        grid-gap: calc-em(40, 16) 0;
+        margin: 0 calc-em(20,16);
+    }
+    // About
+    .about {
+        margin: 0 calc-em(20, 16) calc-em(100, 16);
+    }
+    .about__title-home {
+        margin-bottom: calc-em(50, 16);
+    }
+    .about__flex {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: calc-em(20, 16);
+    }
+    .about__left{
+        display: flex;
+        justify-content: center;
+    }
+    .about__right {
+        line-height: 1.5;
+        p {
+            font-size: calc-em(16, 16);
+            margin-bottom: calc-em(5, 18);
+        }
+    }
+    .about__img {
+        width: 70%;
+    }
+    // Projects
+    .projects {
+        margin: 0 calc-em(20, 16) calc-em(150, 16);
+    }
+    .projects-all {
+        margin-top: calc-em(100, 16);
+    }
+    .projects__title {
+        margin-bottom: calc-em(50, 16);
+    }
+    .projects__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+    }
+    .projects__project {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1em;
+        align-items: center;
+        justify-items: self-start;
+    }
+    .projects__project-title {
+        font-family: 'poppinsbold', sans-serif;
+        font-size: calc-em(20, 16);
+        margin-bottom: calc-em(10, 18);
+    }
+    .projects__project-description {
+        font-family: 'poppinsregular', sans-serif;
+        color: $grey;
+        line-height: 1.4;
+        margin-bottom: calc-em(20, 16);
+    }
+    .projects__project-button {
+        font-size: calc-em(12, 16);
+    }
+}

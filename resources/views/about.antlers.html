@@ -1,21 +1,33 @@
 {{ partial:partials/navigation }}
-<h1 class="about__title">{{title}}</h1>
-<div class="about__introduction">
-    {{presentation_text}}
-    <img src="{{presentation_image:url}}" alt="">
+<div class="slide-effect-off about__title">
+    <h1 class="slideUp">{{title}}</h1>
+</div>
+<div class="about__introduction slide-effect-off">
+    <div class="slideUp">
+        {{presentation_text}}
+    </div>
+    <img class="slideLeft" src="{{presentation_image:url}}" alt="">
 </div>
 <section class="studies">
-    <h2 class="studies__title">{{studies_title}}</h2>
-    <div class="studies__container">
-        {{studies_text}}
-        <img src="{{studies_image:url}}" alt="">
+    <div class="studies__title slide-effect-off">
+        <h2 class="slideUp">{{studies_title}}</h2>
+    </div>
+    <div class="studies__container slide-effect-off">
+        <div class="slideUp">
+            {{studies_text}}
+        </div>
+        <img class="slideLeft" src="{{studies_image:url}}" alt="">
     </div>
 </section>
 <section class="hobbies">
-    <h2 class="hobbies__title">{{hobbies_title}}</h2>
-    <div class="hobbies__container">
-        {{hobbies_text}}
-        <div class="hobbies__images">
+    <div class="hobbies__title slide-effect-off">
+        <h2 class="slideUp">{{hobbies_title}}</h2>
+    </div>
+    <div class="hobbies__container slide-effect-off">
+        <div class="slideUp">
+            {{hobbies_text}}
+        </div>
+        <div class="hobbies__images slideLeft">
             <img src="{{hobbies_image1:url}}" alt="">
             <img src="{{hobbies_image2:url}}" alt="">
             <img src="{{hobbies_image3:url}}" alt="">
@@ -24,18 +36,22 @@
 </section>
 
 <section class="playlists">
-    <h2 class="playlists__title">{{playlists_title}}</h2>
-    <div class="playlists__container">
-        {{ collection:playlists }}
-        <div class="playlists__card">
-            <img src="{{image:url}}" alt="">
-            <p class="playlists__card-title">{{title}}</p>
-            <p class="playlists__card-description">{{description}}</p>
-            <div class="playlists__card-button button__wrapper">
-                <a href="{{playlist_link}}" class="button" target="_blank">Listen to this playlist</a>
+    <div class="playlists__title slide-effect-off">
+        <h2 class="slideUp">{{playlists_title}}</h2>
+    </div>
+    <div class="slide-effect-off">
+        <div class="playlists__container slideUp">
+            {{ collection:playlists }}
+            <div class="playlists__card">
+                <img src="{{image:url}}" alt="">
+                <p class="playlists__card-title">{{title}}</p>
+                <p class="playlists__card-description">{{description}}</p>
+                <div class="playlists__card-button button__wrapper">
+                    <a href="{{playlist_link}}" class="button" target="_blank">Listen to this playlist</a>
+                </div>
             </div>
+            {{ /collection:playlists}}
         </div>
-        {{ /collection:playlists}}
     </div>
 </section>
 {{ partial:partials/footer }}

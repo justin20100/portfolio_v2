@@ -1,6 +1,9 @@
 .about__title{
     color: $blue;
-    margin: calc-em(100,40) 0 calc-em(50,40);
+    margin: calc-em(150,16) 0 0 0;
+    h1{
+        color: $blue;
+    }
 }
 .about__introduction{
     display: grid;
@@ -61,7 +64,7 @@
             color: $blue;
         }
     }
-    div{
+    .hobbies__images{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: calc-em(15,16);
@@ -71,16 +74,18 @@
         }
     }
 }
+
 .playlists{
     margin: 0 calc-em(50,16) calc-em(200,16) calc-em(50,16);
 }
 .playlists__title{
-    margin-bottom: calc-em(50,32);
+    margin-bottom: calc-em(50,16);
 }
 .playlists__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: calc-em(100,16);
+    padding: 0 calc-em(50,16);
 }
 .playlists__card{
     img{
@@ -101,5 +106,5 @@
 .playlists__card-button{
     display: flex;
     align-self: center;
-    font-size: calc-em(14,16);
+    font-size: calc-em(12,16);
 }

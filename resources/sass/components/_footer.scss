@@ -27,3 +27,17 @@
     color: $blue;
 }
 
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        gap: calc-em(30,16);
+        margin: 0 calc-em(20,16) calc-em(40,16);
+    }
+    .footer__container{
+        gap: calc-em(20,16);
+    }
+    .footer__logo{
+        margin-bottom: calc-em(20,16);
+    }
+}
+

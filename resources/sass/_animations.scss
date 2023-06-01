@@ -57,3 +57,19 @@
     0% {transform: translatex(0);}
     100% {transform: translatex(800px);}
 }
+
+
+// slide right
+.slide-effect .fadeIn{
+    position: relative;
+    opacity:0;
+}
+.slide-effect-on .fadeIn {
+    position: relative;
+    opacity:0;
+    animation: fadeIn ease 4s forwards;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

@@ -1,5 +1,5 @@
 {{ partial:partials/navigation }}
-<div class="cta">
+<div class="cta slide-effect-off">
     <div class="cta__left">
         <div class="cta__name slide-effect-off">
             <p class="slideUp">{{name}}</p>
@@ -11,7 +11,7 @@
             <p class="slideUp">{{introduction}}</p>
         </div>
     </div>
-    <div class="cta__right">
+    <div class="cta__right fadeIn">
         <div>
             <svg width="55" height="78" viewBox="0 0 55 78" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -60,7 +60,7 @@
             </svg>
         </div>
         <div>
-            <img src="assets/home_cta/flutter.svg" alt="">
+            <img src="assets/home_cta/statamic.svg" alt="">
         </div>
         <!-- séparateur -->
         <div>
@@ -82,7 +82,7 @@
             </svg>
         </div>
         <div>
-            <img src="assets/home_cta/ps.svg" alt="">
+            <img src="assets/home_cta/flutter.svg" alt="">
         </div>
     </div>
 </div>
@@ -116,7 +116,7 @@
                     <a href="/project/{{slug}}" class="projects__project-link button">See more of this</a>
                 </div>
             </div>
-            <div class="projects__project-img slideUp">
+            <div class="projects__project-img {{if (count % 2 === 0)}} slideRight {{else}}slideLeft{{/if}}">
                 <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}">
             </div>
         </div>
