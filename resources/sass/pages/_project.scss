@@ -3,6 +3,7 @@
 }
 .project__title{
     margin-bottom: calc-em(30,36);
+    h1{color: $blue;}
 }
 .project__tags{
     display: flex;
@@ -17,7 +18,7 @@
     border-radius: calc-em(5,12);
 }
 .project__text{
-    color: $grey;
+    color: $white;
     line-height: 1.4;
     margin-bottom: calc-em(50,16);
 }

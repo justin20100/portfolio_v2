@@ -1,24 +1,34 @@
 {{ partial:partials/navigation }}
 <section class="project" itemscope itemtype="http://schema.org/CreativeWork">
-    <h1 class="project__title" itemprop="name">{{title}}</h1>
-    <ul class="project__tags">
-        {{ tags}}
-        <li class="project__tag" itemprop="keywords">{{ title }}</li>
-        {{ /tags }}
-    </ul>
-    <p class="project__text" itemprop="description">{{project_content}}</p>
+    <div class="project__title slide-effect-off">
+        <h1 class="slideUp" itemprop="name">{{title}}</h1>
+    </div>
+    <div class="slide-effect">
+        <ul class="project__tags slideUp">
+            {{ tags}}
+            <li class="project__tag" itemprop="keywords">{{ title }}</li>
+            {{ /tags }}
+        </ul>
+    </div>
+    <div class="slide-effect-off">
+        <p class="project__text slideUp" itemprop="description">{{project_content}}</p>
+    </div>
     <div class="project__gallery">
-        <div class="project__gallery-item">
-            <img src="{{project_image_1:url}}" alt="{{ project_image_1:alt }}" class="project__img" itemprop="image">
+        <div class="project__gallery-item slide-effect-off">
+            <img src="{{project_image_1:url}}" alt="{{ project_image_1:alt }}" class="project__img slideRight"
+                 itemprop="image">
         </div>
-        <div class="project__gallery-item">
-            <img src="{{project_image_2:url}}" alt="{{ project_image_2:alt }}" class="project__img" itemprop="image">
+        <div class="project__gallery-item slide-effect-off">
+            <img src="{{project_image_2:url}}" alt="{{ project_image_2:alt }}" class="project__img slideLeft"
+                 itemprop="image">
         </div>
-        <div class="project__gallery-item">
-            <img src="{{project_image_3:url}}" alt="{{ project_image_3:alt }}" class="project__img" itemprop="image">
+        <div class="project__gallery-item slide-effect-off">
+            <img src="{{project_image_3:url}}" alt="{{ project_image_3:alt }}" class="project__img slideRight"
+                 itemprop="image">
         </div>
-        <div class="project__gallery-item">
-            <img src="{{project_image_4:url}}" alt="{{ project_image_4:alt }}" class="project__img" itemprop="image">
+        <div class="project__gallery-item slide-effect-off">
+            <img src="{{project_image_4:url}}" alt="{{ project_image_4:alt }}" class="project__img slideLeft"
+                 itemprop="image">
         </div>
     </div>
     <div class="project__links button__wrapper">
@@ -34,11 +44,13 @@
     </div>
 </section>
 <section class="projects" itemscope itemtype="http://schema.org/CollectionPage">
-    <h2 class="projects__title">Other projects</h2>
+    <div class="projects__title slide-effect-off">
+        <h2 class="slideUp">Other projects</h2>
+    </div>
     <div class="projects__container">
         {{ collection:projects :slug:isnt=slug limit="3" }}
-        <div class="projects__project" itemprop="hasPart" itemscope itemtype="http://schema.org/CreativeWork">
-            <div class="projects__project-text">
+        <div class="projects__project slide-effect-off" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="projects__project-text slideUp">
                 <h3 class="projects__project-title" itemprop="name">{{title}}</h3>
                 <p class="projects__project-description" itemprop="description">{{project_small_content}}</p>
                 <div class="projects__project-button button__wrapper">
@@ -46,7 +58,7 @@
                         this</a>
                 </div>
             </div>
-            <div class="projects__project-img">
+            <div class="projects__project-img {{if (count % 2 === 0)}} slideRight {{else}}slideLeft{{/if}}">
                 <img class="projects__project-img" src='{{ project_image_1:url }}' alt="{{ project_image_1:alt }}"
                      itemprop="image">
             </div>
