@@ -39,15 +39,18 @@ sections:
       -
         handle: project_content
         field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
           antlers: false
           display: 'project content'
-          type: textarea
-          icon: textarea
+          type: markdown
+          icon: markdown
           listable: hidden
           instructions_position: above
           visibility: visible
-          validate:
-            - required
       -
         handle: project_image_1
         field:
