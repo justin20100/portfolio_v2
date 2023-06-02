@@ -91,6 +91,10 @@ h2{
     font-size: calc-em(32,16);
     font-family: poppinsbold, sans-serif;
 }
+::selection {
+    color: $white;
+    background: $blue;
+}
 
 @media (max-width: 767px) {
     body{
