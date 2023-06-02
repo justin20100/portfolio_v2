@@ -3,7 +3,7 @@ id: 47ba7d44-91c4-447d-a1d2-9808f0fa6f86
 blueprint: portfolio_content
 title: About
 updated_by: 212f0a27-b3a8-4c64-b19b-6a3a65323a01
-updated_at: 1685697480
+updated_at: 1685697733
 template_field: about
 template_content: about
 template: about
@@ -18,6 +18,6 @@ hobbies_image2: about/hobbies2.jpg
 hobbies_image3: about/hobbies3.jpg
 hobbies_image1: about/hobbies1.jpg
 hobbies_title: 'My hobbies'
-playlists_title: "What's in my ears ?"
+playlists_title: "What's in my ears ? 🎧"
 presentation_image: about/about_presentationdrum.jpg
 ---
