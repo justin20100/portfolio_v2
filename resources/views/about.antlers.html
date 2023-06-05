@@ -1,9 +1,9 @@
 {{ partial:partials/navigation }}
-<div class="slide-effect-off about__title">
-    <h2 class="slideUp" itemprop="name">{{title}}</h2>
+<div class="slide-effect-on about__title">
+    <h2 class="slideUp">{{title}}</h2>
 </div>
-<div class="about__introduction slide-effect-off">
-    <div class="slideUp" itemprop="description">
+<div class="about__introduction slide-effect-on">
+    <div class="slideUp">
         {{presentation_text}}
     </div>
     <img class="slideLeft" src="{{presentation_image:url}}" alt="">
@@ -19,12 +19,12 @@
         <img class="slideLeft" src="{{studies_image:url}}" alt="">
     </div>
 </section>
-<section class="hobbies">
+<section class="hobbies" itemscope itemtype="http://schema.org/Thing">
     <div class="hobbies__title slide-effect-off">
-        <h3 class="slideUp">{{hobbies_title}}</h3>
+        <h3 class="slideUp" itemprop="name">{{hobbies_title}}</h3>
     </div>
-    <div class="hobbies__container slide-effect-off">
-        <div class="slideUp" itemprop="description">
+    <div class="hobbies__container slide-effect-off" itemprop="description">
+        <div class="slideUp">
             {{hobbies_text}}
         </div>
         <div class="hobbies__images slideLeft">
@@ -34,7 +34,6 @@
         </div>
     </div>
 </section>
-
 <section class="playlists">
     <div class="playlists__title slide-effect-off">
         <h3 class="slideUp">{{playlists_title}}</h3>

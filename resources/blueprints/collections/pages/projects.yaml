@@ -21,6 +21,17 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: projects_introduction
+        field:
+          input_type: text
+          antlers: false
+          display: 'projects introduction'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
   sidebar:
     display: Sidebar
     fields:
