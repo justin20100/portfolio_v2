@@ -104,6 +104,12 @@ h3{
     body{
         padding: 0 calc-em(10,16) 0 calc-em(10,16);
     }
+    h2{
+        font-size: calc-em(30,16);
+    }
+    h3{
+        font-size: calc-em(26,16);
+    }
 }
 
 // Button

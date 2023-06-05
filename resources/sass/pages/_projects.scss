@@ -1,5 +1,23 @@
 .projects__h1 {
     margin: calc-em(150, 16) 0 calc-em(20, 16);
-    font-size: calc-em(40,32);
+    font-size: calc-em(40, 32);
     color: $blue;
+}
+@media (max-width: 767px) {
+    .projects__h1 {
+        margin: calc-em(80, 20) 0 calc-em(15, 16);
+        h2 {
+            padding: 0 0 0 calc-em(20, 30);
+            font-size: calc-em(30, 20);
+            color: $blue;
+        }
+    }
+    .projects__intro p {
+        margin: 0 calc-em(20,18) 0 calc-em(20,18);
+        font-size: calc-em(18,16);
+        line-height: 1.5;
+        strong{
+            color: $blue;
+        }
+    }
 }

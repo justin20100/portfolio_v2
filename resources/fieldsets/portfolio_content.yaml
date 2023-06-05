@@ -59,18 +59,3 @@ fields:
       listable: hidden
       instructions_position: above
       visibility: visible
-  -
-    handle: cv_file
-    field:
-      mode: list
-      container: assets
-      restrict: false
-      allow_uploads: true
-      show_filename: true
-      max_files: 1
-      display: 'cv file'
-      type: assets
-      icon: assets
-      listable: hidden
-      instructions_position: above
-      visibility: visible

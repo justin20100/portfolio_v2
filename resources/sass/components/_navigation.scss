@@ -76,6 +76,8 @@
         margin: calc-em(20,16);
         gap: calc-em(20,16);
         ul{
+            justify-content: space-between;
+            width: 100%;
             gap: calc-em(20,16);
         }
     }

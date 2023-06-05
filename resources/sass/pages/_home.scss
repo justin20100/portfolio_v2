@@ -169,8 +169,9 @@
     }
     .about__flex {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 0.4fr;
         grid-gap: calc-em(20, 16);
+        align-items: self-start;
     }
     .about__left{
         display: flex;
