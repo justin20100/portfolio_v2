@@ -9,23 +9,23 @@
         <h3 class="footer__title">Navigation</h3>
         <ul class="footer__list" itemprop="about" itemscope itemtype="http://schema.org/SiteNavigationElement">
             {{ nav:footer_nav }}
-            <li itemprop="name"><a class="footer__link" href="{{ url }}" itemprop="url">{{ title }}</a></li>
+            <li itemprop="name"><a class="footer__link" href="{{ url }}" itemprop="url" title="Go to {{title}} page">{{ title }}</a></li>
             {{ /nav:footer_nav }}
         </ul>
     </div>
     <div class="footer__container">
         <h3 class="footer__title">Contact</h3>
         <ul class="footer__list" itemscope itemtype="http://schema.org/ContactPoint">
-            <li itemprop="email"><a class="footer__link" href="mailto:dev@justin-vincent.be" alt="Envoyer un mail a dev@justin-vincent.be">dev@justin-vincent.be</a></li>
-            <li itemprop="telephone"><a class="footer__link" href="tel:0484303467">04 84 30 34 67</a></li>
+            <li itemprop="email"><a class="footer__link" href="mailto:dev@justin-vincent.be" title="Send an mail at dev@justin-vincent.be">dev@justin-vincent.be</a></li>
+            <li itemprop="telephone"><a class="footer__link" href="tel:0484303467" title="call me at 04 84 30 34 67">04 84 30 34 67</a></li>
         </ul>
     </div>
     <div class="footer__container">
         <h3 class="footer__title">Social media</h3>
         <ul class="footer__list" itemprop="sameAs" itemscope itemtype="http://schema.org/URL">
-            <li><a class="footer__link" href="https://github.com/justin20100" target="_blank" itemprop="url">Github</a></li>
-            <li><a class="footer__link" href="https://www.linkedin.com/in/justin-vincent-83b713259/" target="_blank" itemprop="url">Linkedin</a></li>
-            <li><a class="footer__link" href="https://www.instagram.com/_justinvincent_/" target="_blank" itemprop="url">Instagram</a></li>
+            <li><a class="footer__link" href="https://github.com/justin20100" title="Go to justin's Github" target="_blank" itemprop="url">Github</a></li>
+            <li><a class="footer__link" href="https://www.linkedin.com/in/justin-vincent-83b713259/" title="Go to Justin's Linkedin" target="_blank" itemprop="url">Linkedin</a></li>
+            <li><a class="footer__link" href="https://www.instagram.com/_justinvincent_/" title="Go to Justin's Instagram" target="_blank" itemprop="url">Instagram</a></li>
         </ul>
     </div>
 </footer>

@@ -6,7 +6,7 @@
     <div class="slideUp">
         {{presentation_text}}
     </div>
-    <img class="slideLeft" src="{{presentation_image:url}}" alt="">
+    <img class="slideLeft" src="{{presentation_image:url}}" alt="{{presentation_image:alt}}">
 </div>
 <section class="studies" itemscope itemtype="http://schema.org/EducationalOrganization">
     <div class="studies__title slide-effect-off">
@@ -16,7 +16,7 @@
         <div class="slideUp" itemprop="description">
             {{studies_text}}
         </div>
-        <img class="slideLeft" src="{{studies_image:url}}" alt="">
+        <img class="slideLeft" src="{{studies_image:url}}" alt="{{studies_image:alt}}">
     </div>
 </section>
 <section class="hobbies" itemscope itemtype="http://schema.org/Thing">
@@ -28,9 +28,9 @@
             {{hobbies_text}}
         </div>
         <div class="hobbies__images slideLeft">
-            <img src="{{hobbies_image1:url}}" alt="">
-            <img src="{{hobbies_image2:url}}" alt="">
-            <img src="{{hobbies_image3:url}}" alt="">
+            <img src="{{hobbies_image1:url}}" alt="{{hobbies_image1:alt}}">
+            <img src="{{hobbies_image2:url}}" alt="{{hobbies_image2:alt}}">
+            <img src="{{hobbies_image3:url}}" alt="{{hobbies_image3:alt}}">
         </div>
     </div>
 </section>
@@ -42,11 +42,11 @@
         <div class="playlists__container slideUp">
             {{ collection:playlists }}
             <div class="playlists__card" itemscope itemtype="http://schema.org/MusicPlaylist">
-                <img src="{{image:url}}" alt="">
+                <img src="{{image:url}}" alt="{{image:alt}}">
                 <p class="playlists__card-title" itemprop="name">{{title}}</p>
                 <p class="playlists__card-description">{{description}}</p>
                 <div class="playlists__card-button button__wrapper">
-                    <a href="{{playlist_link}}" class="button" target="_blank">Listen to this playlist</a>
+                    <a href="{{playlist_link}}" title="Listen to {{title}}" class="button" target="_blank">Listen to this playlist</a>
                 </div>
             </div>
             {{ /collection:playlists}}

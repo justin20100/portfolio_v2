@@ -29,7 +29,7 @@
             </svg>
         </div>
         <div>
-            <img src="assets/home_cta/css.svg" alt="">
+            <img src="assets/home_cta/css.svg" alt="CSS logo">
         </div>
         <!-- séparateur -->
         <div>
@@ -38,20 +38,11 @@
             </svg>
         </div>
         <div>
-            <img src="assets/home_cta/js.svg" alt="">
+            <img src="assets/home_cta/js.svg" alt="js logo">
         </div>
         <!-- séparateur -->
         <div>
-            <img src="assets/home_cta/laravel.svg" alt="">
-        </div>
-        <!-- séparateur -->
-        <div>
-            <svg width="2" height="106" viewBox="0 0 2 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="1.05225" x2="1.05225" y2="106" stroke="#2BBCFA"/>
-            </svg>
-        </div>
-        <div>
-            <img src="assets/home_cta/wordpress.svg" alt="">
+            <img src="assets/home_cta/laravel.svg" alt="Laravel logo">
         </div>
         <!-- séparateur -->
         <div>
@@ -60,7 +51,16 @@
             </svg>
         </div>
         <div>
-            <img src="assets/home_cta/statamic.svg" alt="">
+            <img src="assets/home_cta/wordpress.svg" alt="Wordpress logo">
+        </div>
+        <!-- séparateur -->
+        <div>
+            <svg width="2" height="106" viewBox="0 0 2 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.05225" x2="1.05225" y2="106" stroke="#2BBCFA"/>
+            </svg>
+        </div>
+        <div>
+            <img src="assets/home_cta/statamic.svg" alt="Statamic logo">
         </div>
         <!-- séparateur -->
         <div>
@@ -73,7 +73,7 @@
             </svg>
         </div>
         <div>
-            <img src="assets/home_cta/mysql.svg" alt="">
+            <img src="assets/home_cta/mysql.svg" alt="MySql logo">
         </div>
         <!-- séparateur -->
         <div>
@@ -82,7 +82,7 @@
             </svg>
         </div>
         <div>
-            <img src="assets/home_cta/flutter.svg" alt="">
+            <img src="assets/home_cta/flutter.svg" alt="Flutter logo">
         </div>
     </div>
 </div>
@@ -92,12 +92,12 @@
     </div>
     <div class="about__flex slide-effect-off">
         <div class="about__left slideUp">
-            <img class="about__img" itemprop="image" src="{{about_img:url}}" alt="Picture of Justin"/>
+            <img class="about__img" itemprop="image" src="{{about_img:url}}" alt="{{about_img:alt}}"/>
         </div>
         <div class="about__right slideUp">
             <p itemprop="description">{{about_text}}</p>
             <div class="about__button button__wrapper">
-                <a href="{{ link to="about" absolute="true" }}" class="button">Discover me</a>
+                <a href="{{ link to="about" absolute="true" }}" title"Go to About page" class="button">Discover me</a>
             </div>
         </div>
     </div>
@@ -113,7 +113,7 @@
                 <h3 class="projects__project-title" itemprop="name">{{title}}</h3>
                 <p class="projects__project-description" itemprop="description">{{project_small_content}}</p>
                 <div class="projects__project-button button__wrapper">
-                    <a href="/project/{{slug}}" class="projects__project-link button">See more of this</a>
+                    <a href="/project/{{slug}}" title="Go to the page of {{title}} project" class="projects__project-link button">See more of this</a>
                 </div>
             </div>
             <div class="projects__project-img {{if (count % 2 === 0)}} slideRight {{else}}slideLeft{{/if}}">
@@ -123,7 +123,7 @@
         {{ /collection:projects }}
     </div>
     <div class="projects__button button__wrapper">
-        <a href="{{ link to="projects" absolute="true" }}" class="button">See all</a>
+        <a href="{{ link to="projects" absolute="true" }}" title="Go to Projects page" class="button">See all</a>
     </div>
 </section>
 {{ partial:partials/footer }}

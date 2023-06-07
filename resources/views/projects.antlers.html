@@ -14,7 +14,7 @@
                 <h3 class="projects__project-title" itemprop="name">{{title}}</h3>
                 <p class="projects__project-description" itemprop="description">{{project_small_content}}</p>
                 <div class="projects__project-button button__wrapper">
-                    <a href="/project/{{slug}}" class="projects__project-link button">See more of this</a>
+                    <a href="/project/{{slug}}" title="Go to the page of {{title}} project" class="projects__project-link button">See more of this</a>
                 </div>
             </div>
             <div class="projects__project-img {{if (count % 2 === 0)}} slideRight {{else}}slideLeft{{/if}}">

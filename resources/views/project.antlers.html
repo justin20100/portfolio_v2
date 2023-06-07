@@ -33,13 +33,13 @@
     </div>
     <div class="project__links button__wrapper">
         {{if app_link}}
-        <a href="{{app_link}}" class="button project__link" target="_blank" itemprop="url">Visit {{title}}</a>
+        <a href="{{app_link}}" class="button project__link" title="Go to the project" target="_blank" itemprop="url">Visit {{title}}</a>
         {{/if}}
         {{if git_link}}
-        <a href="{{git_link}}" class="button project__link" target="_blank">Git repository</a>
+        <a href="{{git_link}}" class="button project__link" title="Go to the Gitrepository" target="_blank">Git repository</a>
         {{/if}}
         {{if design_link}}
-        <a href="{{design_link}}" class="button project__link" target="_blank">Design file</a>
+        <a href="{{design_link}}" class="button project__link" title="Go to the design file" target="_blank">Design file</a>
         {{/if}}
     </div>
 </section>
@@ -54,7 +54,7 @@
                 <h3 class="projects__project-title" itemprop="name">{{title}}</h3>
                 <p class="projects__project-description" itemprop="description">{{project_small_content}}</p>
                 <div class="projects__project-button button__wrapper">
-                    <a href="/project/{{slug}}" class="projects__project-link button" itemprop="url">See more of
+                    <a href="/project/{{slug}}" class="projects__project-link button" title="Go to the page of {{title}} project" itemprop="url">See more of
                         this</a>
                 </div>
             </div>
